@@ -1,2 +1,4 @@
-# PoolballGMsPublic
-Public version of the PoolballGMs game development
+# PoolballGMs
+ Development of the PoolballGMs Game
+
+ ItzToast and virtuos0
