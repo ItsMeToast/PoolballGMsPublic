@@ -1,0 +1,93 @@
+@font-face {
+    font-family: funFont;
+    src: url(fonts/LondrinaSolid-Regular.ttf);
+}
+
+* {
+    font-family: funFont;
+    color: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    width:50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.375vw;
+    padding-left: 5%;
+}
+
+.overlaycontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
+.stars {
+    height: 1em;
+    width: auto;
+}
+
+#teamtitle {
+    font-size: 0.75vw;
+}
+
+#NYL {
+    background-color: rgb(4, 46, 56, 0.88);
+}
+
+#MCM {
+    background-color: rgba(67, 189, 130, 0.88);
+}
+
+#LAA {
+    background-color: rgba(252, 137, 61, 0.88);
+}
+
+#HOU {
+    background-color: rgba(59, 59, 59, 0.88);
+}
+
+#TOR {
+    background-color: rgba(253, 90, 112, 0.88);
+}
+
+#CHI {
+    background-color: rgba(89, 31, 177, 0.88);
+}
+
+#title_ {
+    color: black;
+}

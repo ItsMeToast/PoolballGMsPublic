@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
+@font-face {
+    font-family: funFont;
+    src: url(fonts/LondrinaSolid-Regular.ttf);
+}
+
 header {
     background: rgb(243, 243, 243);
     text-align: center;
@@ -45,7 +50,7 @@ nav li {
 nav a {
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
-    font-family: "Work Sans", sans-serif;
+    font-family: funFont, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: 0 0 0 0 #000000;
@@ -53,6 +58,15 @@ nav a {
     transition: all 0.2s ease;
 }
 
+.open {
+    text-decoration: underline;
+}
+
 nav a:hover {
     box-shadow: 0 0 0rem 0.2rem #000000;
+}
+
+.foot {
+    position: fixed;
+    background-color: rgb(255, 255, 255, 1);
 }

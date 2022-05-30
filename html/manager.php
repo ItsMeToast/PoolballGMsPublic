@@ -41,11 +41,13 @@
     <table class="layout" width="100%">
 
         <tr> 
-            <td align="center"> <img src="images/logo.svg" alt="poolball" class="ball"> </td> 
+            <td align="center"><h1><?php echo "Welcome, " . $_POST['uname']?></h1></td> 
         </tr>
 
         <tr>
-            <td align="center"><button class="button" onclick="document.getElementById('pop1').style.display='block'">Manager Login</button></td>
+            <td align="center">
+                <?php echo "Your password is : " . $_POST['psw'] . "<br>"?>
+            </td>
         </tr>
 
     </table>

@@ -50,6 +50,85 @@ body {
     background-position: 10%;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10%;
+}
+
+.animate {
+    -webkit-animation: fade 0.4s ease;
+    -moz-animation: fade 0.4s ease;
+    animation: fade 0.4s ease;
+}
+
+.login {
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 40%;
+    padding: 2rem;
+}
+
+.popup label {
+    float: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+}
+
+.popup h1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 0;
+  color: #000;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.submitbtn {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 25%;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.submitbtn:hover {
+    background-color: rgb(157, 213, 157);
+}
+
 footer {
     width: 100%;
     position: absolute;
@@ -110,3 +189,19 @@ footer li {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+
+/* Fade In Animation */
+@-webkit-keyframes fade{
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+@-moz-keyframes fade {
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+@keyframes fade {
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+    
+ 
