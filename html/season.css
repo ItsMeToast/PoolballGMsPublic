@@ -1,8 +1,90 @@
 /* Season page styles */
 
+@font-face {
+    font-family: funFont;
+    src: url(fonts/LondrinaSolid-Regular.ttf);
+}
+
+.standings-tb {
+    position:relative;
+    top:0;
+    left:0;
+    width:54%;
+    height:100%;
+    padding:5px;
+    margin:5px;
+}
+
+.tb-title {
+    text-align: center;
+    font-size:5vh;
+    color:white;
+}
+
+.standings-table {
+    width:100%;
+    height:100%;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+}
+
+.stand-logo {
+    height: 3rem;
+    width:auto;
+}
+
+.standrow {
+    height:9.7vh;
+}
+
+table, td, th {
+    border: rgb(66, 65, 65) 2px solid;
+}
+
+tr {
+    color:white;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(112, 109, 109);
+}
+tr:nth-child(odd) {
+    background-color: rgb(94, 90, 90);
+}
+
+th {
+    height: 12vh;
+}
+
+.stats-sec {
+    width: 44%;
+    position:fixed;
+    top:0;
+    right:0;
+    margin:10px;
+    margin-top:14vh;
+    background-color: rgb(66, 65, 65);
+}
+
+.topgsentry {
+    padding-left:11vw;
+    padding-top: 8px;
+}
+
+.goals {
+    height:auto;
+    color:white;
+    font-size: 3.2vh;
+    margin: 12px;
+}
+
 body {
     margin: 0;
     padding-top: 6rem;
+    background-color: rgb(90, 86, 86);
+    font-family: funFont;
+    height:100%;
 }
 
 .layout {

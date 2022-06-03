@@ -1,8 +1,123 @@
 /* News page styles */
 
+@font-face {
+    font-family: funFont;
+    src: url(fonts/LondrinaSolid-Regular.ttf);
+}
+
+.sidebar {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(71, 67, 67);
+    overflow-x:hidden;
+    overflow-y: scroll;
+    padding: 15px;
+    font-family: funFont;
+    color:white;
+    font-size: 1.6vw;
+}
+
+.sb-break {
+    height:2px;
+    background-color:white;
+    position:absolute;
+    width:94%;
+}
+
+.news-break {
+    height: 3px;
+    background-color: white;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width: 90%;
+}
+
+.teamlogo {
+    position:relative;
+    height:2.5rem;
+    width:auto;
+}
+
+.trade {
+    padding: 7px 0px 7px 0px;
+}
+
+#transactionstitle {
+    color:white;
+    text-align: center;
+    position:relative;
+    font-size: 3.2vw;
+    padding-top: 12vh;
+}
+
+#news-title {
+    text-align:center;
+    font-size: 4.6vw;
+}
+
+.news-sec {
+    width:70%;
+    left:0;
+    top:0;
+    height: auto;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    color:white;
+    font-family: funFont;
+    font-size:2vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.headline {
+    width:60%;
+    height:35vh;
+    margin:14px;
+    padding:5px;
+}
+
+.headline-title {
+    text-align: center;
+    font-size:2.6vw;
+}
+
+.headline-cont {
+    float: left;
+    font-size:1.8vw;
+}
+
+.thumbnail {
+    width:30%;
+    height:35vh;
+    margin: 14px;
+    padding:5px;
+}
+
+.tn-img {
+    display:block;
+    margin:auto;
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 35vh;
+
+}
+
 body {
     margin: 0;
     padding-top: 6rem;
+    background-color: rgb(90, 86, 86);
 }
 
 .layout {

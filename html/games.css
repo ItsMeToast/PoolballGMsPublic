@@ -2,72 +2,61 @@
 
 body {
     margin: 0;
-    padding-top: 6rem;
-}
-
-.layout {
-    margin-top: 1rem;
-}
-
-.layout td {
-    padding: 2rem;
-    width: 25%;
-}
-
-.ball {
-    width: 20%;
-    height: auto;
-
-    -webkit-animation: spin 5s ease-in-out infinite;
-    -moz-animation: spin 5s ease-in-out infinite;
-    animation: spin 5s ease-in-out infinite;
-}
-
-.button {
-    font-size: 2rem;
+    padding: 6rem 0;
+    background-color: rgb(90, 86, 86);
+    font-family: funFont;
     color: rgb(255, 255, 255);
-
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
-    background-size: 230% 500%;
-    background-position: 100%;
-
-    border: 4px solid rgb(255, 255, 255);
-    transition: all 0.5s ease;
-    padding: 5px 10px 5px 10px;
 }
 
-.button:hover {
-    color:rgb(0, 0, 0);
+.seasonbutton {
+    width: 85%;
+    font-family: funFont;
+    color: rgb(255, 255, 255);
+    background-color: rgb(54, 51, 51);
+    font-size: 3rem;
     cursor: pointer;
-    background-position: 10%;
+    border: none;
+    margin-top: 5vw;
+    padding: 1rem 0;
 }
 
-footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.seasonbutton:hover {
+    background-color: rgb(41, 39, 39);
+}
+
+.seasonbox {
+    display: none;
+    width: 85%;
+    font-size: 2rem;
     text-align: center;
-    padding: 1rem 0rem;
+    background-color: rgb(71, 67, 67);
 }
 
-.media {
-    width: 3rem;
+.seasontable {
+    padding: 0 2rem;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0 1rem;
+}
+
+.seasontable td {
+    width: 5rem;
+    vertical-align: middle;
+}
+
+.spacer {
+    width: 25% !important;
+}
+
+.leftlogo {
+    text-align: left;
+}
+
+.draftpic {
+    width: 4rem;
     height: auto;
-}
-
-footer ul {
-    float: right;
-    margin: 0;
-    margin-right: 3rem;
-    padding: 0;
-    list-style: none;
-}
-
-footer li {
     display: inline-block;
-    margin: 0rem 0.5rem;
 }
-
 
 
 /* --- Animations --- */
