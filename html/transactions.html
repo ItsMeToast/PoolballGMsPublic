@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="transactions.css">
     <link rel="stylesheet" href="navbar.css">
 
     <title>Poolball GMs</title>
@@ -16,6 +16,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -23,34 +26,44 @@
 
     <body>
 
+    <!-- Navbar -->
     <header>
-        <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
         
         <nav>
           <ul>
-            <li><a href="news.html">News</a></li>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="season.html">Season</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="prospects.html">Prospects</a></li>
+            <div class="dropdown">
+                <li>
+                    <button class="dropbtn">NEWS</button>
+                    <div class="dropcontent">
+                        <a href="announcements.html">Announcements</a>
+                        <a href="scores.html">Scores</a>
+                        <a href="standings.html">Standings</a>
+                        <a href="transactions.html" class="open">Transactions</a>
+                    </div>
+                </li>
+            </div>
+
+            <a href="teams.html"><li>TEAMS</li></a>
+
+            <div class="dropdown">
+                <li>
+                    <button class="dropbtn">PLAYERS</button>
+                    <div class="dropcontent">
+                        <a href="allplayers.html">All Players</a>
+                        <a href="prospects.html">Prospects</a>
+                        <a href="halloffame.html">Hall of Fame</a>
+                    </div>
+                </li>
+            </div>
+
+            <a href="login.html" class="navlogin"><li>LOGIN</li></a>
           </ul>
         </nav>
 
     </header>
 
-    <table class="layout" width="100%">
-
-        <tr> 
-            <td align="center"><h1><?php echo "Welcome, " . $_POST['uname']?></h1></td> 
-        </tr>
-
-        <tr>
-            <td align="center">
-                <?php echo "Your password is : " . $_POST['psw'] . "<br>"?>
-            </td>
-        </tr>
-
-    </table>
+    Transactions
 
 
     <!-- Login Popup -->
@@ -73,7 +86,7 @@
     <footer>
         <ul>
             <li><a href="https://discord.com/channels/872517520341467146/872518021057495140">
-                <img src="images/discord-logo-white.svg" class="media">
+                <img src="images/discord-logo-white.png" class="media">
             </a></li>
 
             <li><a href="https://github.com/ItsMeToast/PoolballGMsPublic">

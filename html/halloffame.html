@@ -1,4 +1,4 @@
-<!-- Poolball GMs Homepage -->
+<!-- Poolball GMs Hall of Fame -->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="halloffame.css">
     <link rel="stylesheet" href="navbar.css">
 
     <title>Poolball GMs</title>
@@ -52,7 +52,7 @@
                     <div class="dropcontent">
                         <a href="allplayers.html">All Players</a>
                         <a href="prospects.html">Prospects</a>
-                        <a href="halloffame.html">Hall of Fame</a>
+                        <a href="halloffame.html" class="open">Hall of Fame</a>
                     </div>
                 </li>
             </div>
@@ -63,27 +63,34 @@
 
     </header>
 
-    <table class="layout" width="100%">
+    All HSN players lol
 
-        <tr> 
-            <td align="center"> <img src="images/logowhite.png" alt="poolball" class="ball"> </td> 
-        </tr>
 
-        <tr>
-            <td align="center"><a href="login.html"><button class="button">Manager Login</button></a></td>
-        </tr>
+    <!-- Login Popup -->
+    <div id="pop1" class="popup animate">
+        <center><form class="login" action="manager.php" method="POST">
+                <h1>Poolball Manager Login</h1>
+                <span class="close" title="Close Login" onclick="document.getElementById('pop1').style.display='none'">&times;</span>
+                <label for="uname">Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                <button type="submit" class="submitbtn">Login</button>
+        </form></center>
+    </div>
 
-    </table>
 
     <!-- Footer -->
     <footer>
         <ul>
             <li><a href="https://discord.com/channels/872517520341467146/872518021057495140">
-                <img src="images/Discord-Logo-White.png" class="media">
+                <img src="images/discord-logo-white.png" class="media">
             </a></li>
 
             <li><a href="https://github.com/ItsMeToast/PoolballGMsPublic">
-                <img src="images/GitHub-Logo-White.png" class="media">
+                <img src="images/github-logo-white.png" class="media">
             </a></li>
           </ul>
     </footer>

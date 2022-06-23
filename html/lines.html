@@ -1,0 +1,212 @@
+<!-- Poolball GMs Next Lines -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="managerbar.css">
+    <link rel="stylesheet" href="lines.css">
+
+    <title>Poolball GMs</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- Drag and Drop script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        function dragStart(ev) {
+            this.style.opacity = '0.5';
+
+            dragSource = this;
+
+            ev.dataTransfer.effectAllowed = 'move';
+            ev.dataTransfer.setData('text/html', dragSource.innerHTML);
+        }
+
+        function dragEnd(ev) {
+            this.style.opacity = '1';
+        }
+
+        function dragOver(ev) {
+            ev.preventDefault();
+            return false;
+        }
+
+        function dragEnter(ev) {
+            this.style.outline = "3px dashed black";
+        }
+
+        function dragLeave(ev) {
+            this.style.outline = "none";
+        }
+
+        function dragDrop(ev) {
+            ev.stopPropagation();
+
+            if (dragSource !== this) {
+                dragSource.innerHTML = this.innerHTML;
+                if (this.innerHTML == "") {
+                    dragSource.classList.remove('player');
+                }
+                this.innerHTML = ev.dataTransfer.getData('text/html');
+
+                let players = document.querySelectorAll('.player');
+                players.forEach(function (player) {
+                    player.addEventListener('dragstart', dragStart);
+                    player.addEventListener('dragend', dragEnd);
+                });
+
+                let positions = document.querySelectorAll('.position');
+                positions.forEach(function (position) {
+                    position.addEventListener('dragover', dragOver);
+                    position.addEventListener('dragenter', dragEnter);
+                    position.addEventListener('dragleave', dragLeave);
+                    position.addEventListener('drop', dragDrop);
+                });
+            }
+
+            this.style.outline = "none";
+        }
+
+        let players = document.querySelectorAll('.player');
+        players.forEach(function (player) {
+            player.addEventListener('dragstart', dragStart);
+            player.addEventListener('dragend', dragEnd);
+        });
+
+        let positions = document.querySelectorAll('.position');
+        positions.forEach(function (position) {
+            position.addEventListener('dragover', dragOver);
+            position.addEventListener('dragenter', dragEnter);
+            position.addEventListener('dragleave', dragLeave);
+            position.addEventListener('drop', dragDrop);
+        });
+    });
+    </script>
+
+</head>
+
+<!-- HTML site body -->
+
+    <body>
+
+    <header>
+        <a href="index.php"><img src="images/logo.png" alt="logo" class="logo"></a>
+        
+        <nav>
+          <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="season.html">Season</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="prospects.html">Prospects</a></li>
+          </ul>
+        </nav>
+
+    </header>
+
+    <!-- Manager Sidebar -->
+    <div class="managerbar">
+        <table class="managertable" cellspacing="0">
+            <tr><td align="center"><a href="managerhub.html">My Team</a></td></tr>
+            <tr><td align="center"><a href="#" id="active">Next Lines</a></td></tr>
+            <tr><td align="center"><a href="league.html">League</a></td></tr>
+            <tr><td align="center"><a href="trades.html">Trades</a></td></tr>
+            <tr><td align="center"><a href="contracts.html">Contracts</a></td></tr>
+            <tr><td align="center"><a href="drafting.html">Drafting</a></td></tr>
+            <tr><td align="center"><a href="schedule.html">Schedule</a></td></tr>
+            <tr><td align="center"><a href="allplayers.html">All Players</a></td></tr>
+            <tr><td align="center"><a href="index.html" id="logout">Log Out</a></td></tr>
+        </table>
+    </div>
+
+    <!-- Begin Page Content -->
+    <div class="content">
+        <section class="gameinfo">
+            <div class="team"><h1>HSN</h1><h3>(3-1-1)</h3></div>
+            <img src="images/HoustonStampedeLogo.png" class="teampic">
+            <h1 class="vs">VS</h1>
+            <img src="images/LasAngelesAllianceLogo.png" class="teampic">
+            <div class="team"><h1>LAA</h1><h3>(1-2-2)</h3></div>
+        </section>
+        <div class="season"><h3>Season 1 Game 4</h3></div>
+       
+        <section class="players">
+            <table class="playertable" border>
+                <tr class="tablehead"><td align="center" colspan="2">Your Team</td></tr>
+                <tr>
+                    <td align="center">
+                        <div class="player" id="p1" draggable="true">Yerushalayim Levi</div>
+                    </td>
+                    <td align="center">
+                        <div class="player" id="p2" draggable="true">Jackson Nefeli</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="player" id="p3" draggable="true">Tyler Teekay</div>
+                    </td>
+                    <td align="center">
+                        <div class="player" id="p4" draggable="true">Stephen Greywood</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="player" id="p5" draggable="true">Mason Trapton</div>
+                    </td>
+                    <td align="center">
+                        <div class="player" id="p6" draggable="true">Nino Maju</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="player" id="p7" draggable="true">Taylor Major</div>
+                    </td>
+                    <td align="center">
+                        <div class="player" id="p8" draggable="true">Michael Sighte</div>
+                    </td>
+                </tr>
+               
+                
+            </table>
+        </section>
+       
+        <section class="lines">
+            <table id="lt1" class="linetable" border>
+                <tr class="tablehead"><td align="center">Line 1</td></tr>
+                <tr><td align="center">
+                    <div class="position" id="c1"></div>
+                </td></tr>
+                <tr><td align="center">
+                    <div class="position" id="s1"></div>
+                </td></tr>
+                <tr><td align="center">
+                    <div class="position" id="d1"></div>
+                </td></tr>
+            </table>
+
+            <table id="lt2" class="linetable" border>
+                <tr class="tablehead"><td align="center">Line 2</td></tr>
+                <tr><td align="center">
+                    <div class="position" id="c2"></div>
+                </td></tr>
+                <tr><td align="center">
+                    <div class="position" id="s2"></div>
+                </td></tr>
+                <tr><td align="center">
+                    <div class="position" id="d2"></div>
+                </td></tr>
+            </table>
+        </section>
+    </div>
+   
+    </body>
+
+</html>

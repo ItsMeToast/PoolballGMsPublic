@@ -1,0 +1,170 @@
+/* Login page styles */
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding-top: 5rem;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(rgb(228, 228, 228), rgb(121, 121, 121), rgb(0, 0, 0));
+}
+
+.content {
+    position: absolute;
+    top: 5rem;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20vw;
+    animation: colorback 10s ease-in-out infinite;
+}
+
+.images {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+}
+
+.teamlogo {
+    position: absolute;
+    top:0;
+    width: 15rem;
+    height: 15rem;
+    filter: drop-shadow(0 0 0.4rem rgba(255, 255, 255, 0.6));
+}
+
+.formarea {
+    width: 25rem;
+    height: 25rem;
+    background: white;
+    box-shadow: 0px 0px 10px 2px black;
+    z-index: 1;
+    text-align: center;
+    margin: none;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.formtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+hr {
+    height: 0.2rem;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.forminput {
+    font-size: 1.4rem;
+    width: 75%;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0.4rem 0.2rem;
+    border-radius: 5px;
+}
+
+.submitbtn {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    background: #00a4e064;
+    border: 2px solid rgb(74, 74, 74);
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submitbtn:hover {
+    background: rgba(155, 249, 178, 0.695);
+}
+
+/* --- Animations --- */
+@keyframes colorback {
+    0% {background: #000000a0;}
+    16% {background: #471198a0;}
+    32% {background: #ff4962a0;}
+    48% {background: #07414fa0;}
+    64% {background: #339c62a0;}
+    80% {background: #ff7f27a0;}
+    100% {background: #000000a0;}
+}
+
+@keyframes logoHSN {
+    0% {
+        opacity:1;
+        z-index: 1;
+    }
+    16% {opacity:0;}
+    32% {opacity:0;}
+    48% {opacity:0;}
+    64% {opacity:0;}
+    80% {opacity:0;}
+    84% {opacity:0;}
+    100% {
+        opacity:1;
+        z-index: 100;
+    }
+}
+#HSN {animation: logoHSN 10s ease-in-out infinite;}
+
+@keyframes logoCHI {
+    0% {opacity:0;}
+    16% {opacity:1;}
+    32% {opacity:0;}
+    48% {opacity:0;}
+    64% {opacity:0;}
+    80% {opacity:0;}
+    100% {opacity:0;}
+}
+#CHI {animation: logoCHI 10s ease-in-out infinite;}
+
+@keyframes logoTOR {
+    0% {opacity:0;}
+    16% {opacity:0;}
+    32% {opacity:1;}
+    48% {opacity:0;}
+    64% {opacity:0;}
+    80% {opacity:0;}
+    100% {opacity:0;}
+}
+#TOR {animation: logoTOR 10s ease-in-out infinite;}
+
+@keyframes logoNYL {
+    0% {opacity:0;}
+    16% {opacity:0;}
+    32% {opacity:0;}
+    48% {opacity:1;}
+    64% {opacity:0;}
+    80% {opacity:0;}
+    100% {opacity:0;}
+}
+#NYL {animation: logoNYL 10s ease-in-out infinite;}
+
+@keyframes logoMCM {
+    0% {opacity:0;}
+    16% {opacity:0;}
+    32% {opacity:0;}
+    48% {opacity:0;}
+    64% {opacity:1;}
+    80% {opacity:0;}
+    100% {opacity:0;}
+}
+#MCM {animation: logoMCM 10s ease-in-out infinite;}
+
+@keyframes logoLAA {
+    0% {opacity:0;}
+    16% {opacity:0;}
+    32% {opacity:0;}
+    48% {opacity:0;}
+    64% {opacity:0;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+#LAA {animation: logoLAA 10s ease-in-out infinite;}

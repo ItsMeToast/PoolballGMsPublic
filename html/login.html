@@ -1,4 +1,4 @@
-<!-- Poolball GMs Homepage -->
+<!-- Poolball GMs Login -->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="navbar.css">
 
     <title>Poolball GMs</title>
@@ -57,36 +57,32 @@
                 </li>
             </div>
 
-            <a href="login.html" class="navlogin"><li>LOGIN</li></a>
+            <a href="login.html" class="open"><li>LOGIN</li></a>
           </ul>
         </nav>
 
     </header>
 
-    <table class="layout" width="100%">
+    <div class="content">
+        <div class="images">
+            <img src="images/HSN.png" class="teamlogo" id="HSN">
+            <img src="images/CHI.png" class="teamlogo" id="CHI">
+            <img src="images/TOR.png" class="teamlogo" id="TOR">
+            <img src="images/NYL.png" class="teamlogo" id="NYL">
+            <img src="images/MCM.png" class="teamlogo" id="MCM">
+            <img src="images/LAA.png" class="teamlogo" id="LAA">
+        </div>
+        
 
-        <tr> 
-            <td align="center"> <img src="images/logowhite.png" alt="poolball" class="ball"> </td> 
-        </tr>
-
-        <tr>
-            <td align="center"><a href="login.html"><button class="button">Manager Login</button></a></td>
-        </tr>
-
-    </table>
-
-    <!-- Footer -->
-    <footer>
-        <ul>
-            <li><a href="https://discord.com/channels/872517520341467146/872518021057495140">
-                <img src="images/Discord-Logo-White.png" class="media">
-            </a></li>
-
-            <li><a href="https://github.com/ItsMeToast/PoolballGMsPublic">
-                <img src="images/GitHub-Logo-White.png" class="media">
-            </a></li>
-          </ul>
-    </footer>
+        <div class="formarea">
+            <h1 class="formtitle">Poolball GMs<br>Manager Login<hr></h1>
+            <form class="loginform">
+                <input class="forminput" type="text" id="user" name="user" placeholder="Username"><br>
+                <input class="forminput" type="password" id="psw" name="psw" placeholder="Password"><br>
+                <input class="submitbtn" type="submit" value="Submit"><br>
+            </form>
+        </div>
+    </div>
 
     </body>
 

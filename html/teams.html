@@ -16,6 +16,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -23,16 +26,38 @@
 
     <body>
 
+    <!-- Navbar -->
     <header>
         <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
         
         <nav>
           <ul>
-            <li><a href="news.html">News</a></li>
-            <li><a href="#" class="open">Teams</a></li>
-            <li><a href="season.html">Season</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="prospects.html">Prospects</a></li>
+            <div class="dropdown">
+                <li>
+                    <button class="dropbtn">NEWS</button>
+                    <div class="dropcontent">
+                        <a href="announcements.html">Announcements</a>
+                        <a href="scores.html">Scores</a>
+                        <a href="standings.html">Standings</a>
+                        <a href="transactions.html">Transactions</a>
+                    </div>
+                </li>
+            </div>
+
+            <a href="teams.html" class="open"><li>TEAMS</li></a>
+
+            <div class="dropdown">
+                <li>
+                    <button class="dropbtn">PLAYERS</button>
+                    <div class="dropcontent">
+                        <a href="allplayers.html">All Players</a>
+                        <a href="prospects.html">Prospects</a>
+                        <a href="halloffame.html">Hall of Fame</a>
+                    </div>
+                </li>
+            </div>
+
+            <a href="login.html" class="navlogin"><li>LOGIN</li></a>
           </ul>
         </nav>
 
@@ -42,7 +67,7 @@
             <h1 class="text">Poolball Teams</h1>
             <div class="container">
                 <div class="teambox containers">
-                    <img src="images/ChicagoRoyaltyLogo.png" class="image">
+                    <img src="images/CHI.png" class="image">
                     <div class="overlay flexboxol" id="CHI">
                         <div id="oltitle" class="text">Chicago Royalty</div>
                         <div id="olcont" class="text">Manager: HockeyDWolf</div>
@@ -73,38 +98,38 @@
                     </div>
                 </div>
                 <div class="teambox containers">
-                    <img src="images/HoustonStampedeLogo.png" class="image">
+                    <img src="images/HSN.png" class="image">
                     <div class="overlay flexboxol" id="HOU">
                         <div id="oltitle" class="text">Houston Stampede</div>
                         <div id="olcont" class="text">Manager: ItzToast</div>
                         <div id="olcont" class="text">
                             Goal Scoring: 
-                            <img src="images/half-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars">
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars">
                         </div>
                         <div id="olcont" class="text">
                             Playmaking: 
                             <img src="images/full-star.png" class="stars"> 
-                            <img src="images/half-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars">
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars">
                         </div>
                         <div id="olcont" class="text">
                             Defending: 
                             <img src="images/full-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars"> 
-                            <img src="images/no-star.png" class="stars">
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars"> 
+                            <img src="images/full-star.png" class="stars">
                         </div>
                     </div>
                 </div>
                 <div class="teambox containers">
-                    <img src="images/LasAngelesAllianceLogo.png" class="image">
+                    <img src="images/LAA.png" class="image">
                     <div class="overlay flexboxol" id="LAA">
                         <div id="oltitle" class="text">Los Angeles Alliance</div>
                         <div id="olcont" class="text">Manager: Artem Kovalenko</div>
@@ -135,7 +160,7 @@
                     </div>
                 </div>
                 <div class="teambox containers">
-                    <img src="images/MexicoCityMayansLogo.png" class="image">
+                    <img src="images/MCM.png" class="image">
                     <div class="overlay flexboxol" id="MCM">
                         <div id="oltitle" class="text">Mexico City Mayans</div>
                         <div id="olcont" class="text">Manager: SamIAm</div>
@@ -166,7 +191,7 @@
                     </div>
                 </div>
                 <div class="teambox containers">
-                    <img src="images/NewYorkLibertyLogo.png" class="image">
+                    <img src="images/NYL.png" class="image">
                     <div class="overlay flexboxol" id="NYL">
                         <div id="oltitle" class="text">New York Liberty</div>
                         <div id="olcont" class="text">Manager: Joe Bidome</div>
@@ -197,7 +222,7 @@
                     </div>
                 </div>
                 <div class="teambox containers">
-                    <img src="images/TorontoRedcoatsLogo.png" class="image">
+                    <img src="images/TOR.png" class="image">
                     <div class="overlay flexboxol" id="TOR">
                         <div id="oltitle" class="text">Toronto Redcoats</div>
                         <div id="olcont" class="text">Manager: ¯\_(ツ)_/¯</div>

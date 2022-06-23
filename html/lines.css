@@ -1,0 +1,111 @@
+/* Manager next lines page styles */
+
+@font-face {
+    font-family: funFont;
+    src: url(fonts/LondrinaSolid-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding-top: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5rem;
+}
+
+.content {
+    margin-left: 10rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 0;
+}
+
+.team {
+    text-align: center;
+}
+
+section {
+    padding: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gameinfo {
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.vs {
+    font-family: funFont;
+}
+
+.season {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.players {
+    width: 40%;
+    float: left;
+}
+
+.playertable, .linetable {
+    font-size: 1.4rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.playertable td, .linetable td {
+    width: 12rem;
+    max-width: 12em;
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: inherit;
+    white-space: nowrap;
+    padding: 0.5rem;
+}
+
+.tablehead {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: grey;
+}
+
+.player, .position {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    user-select: none;
+}
+
+.player:hover {
+    cursor: grab;
+    border-radius: 5px;
+    background-color: rgb(190, 190, 190);
+}
+
+.lines {
+    width: 60%;
+    float: right;
+}
+
+.teampic {
+    width: 5rem;
+    padding: 0 1rem;
+}
+
+/* --- Animations --- */
